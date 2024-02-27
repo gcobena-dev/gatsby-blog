@@ -1,4 +1,5 @@
 import * as React from "react"
+import Helmet from "react-helmet"
 
 const pageStyles = {
   color: "#232129",
@@ -126,6 +127,9 @@ const links = [
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
+      <Helmet>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      </Helmet>
       <h1 style={headingStyles}>
         Congratulations
         <br />
